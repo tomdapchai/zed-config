@@ -1,0 +1,132 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  // Extensions are re-installed automatically on a fresh machine from this list.
+  "auto_install_extensions": {
+    "angular": true,
+    "catppuccin": true,
+    "dockerfile": true,
+    "dracula": true,
+    "git-firefly": true,
+    "html": true,
+    "material-icon-theme": true,
+    "sql": true,
+    "toml": true,
+    "xml": true,
+  },
+  "diff_view_style": "split",
+  "terminal": {
+    "dock": "right"
+  },
+  "format_on_save": "off",
+  "remove_trailing_whitespace_on_save": true,
+  "edit_predictions": {
+    "mode": "eager",
+    "allow_data_collection": "no",
+    "disabled_globs": [],
+    "provider": "open_ai_compatible_api",
+    "open_ai_compatible_api": {
+      "api_url": "https://api.deepseek.com/beta/completions",
+      "model": "deepseek-v4-pro",
+      "prompt_format": "infer"
+    }
+  },
+  "cli_default_open_behavior": "existing_window",
+  "git": {
+    "blame": {
+      "show_avatar": false,
+    },
+  },
+  "fast_scroll_sensitivity": 5.0,
+  "scroll_sensitivity": 3.0,
+  "vertical_scroll_margin": 5.0,
+  "git_panel": {
+    "sort_by": "path",
+    "tree_view": false,
+    "dock": "left",
+  },
+  "agent": {
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "default": "allow",
+          "always_allow": [
+            {
+              "pattern": "^ruff\\s+format(\\s|$)"
+            },
+            {
+              "pattern": "^ruff\\s+check(\\s|$)"
+            },
+            {
+              "pattern": "^pytest\\b"
+            },
+            {
+              "pattern": "^tail\\b"
+            },
+            {
+              "pattern": "^cd\\s+/Users/tam\\.vo/repo/company/document-validator(\\s|$)"
+            }
+          ]
+        }
+      }
+    },
+    "dock": "right",
+    "default_model": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "enable_thinking": true,
+      "effort": "high",
+    },
+    "sidebar_side": "right",
+    "button": true,
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "project_panel": {
+    "dock": "left",
+    "git_status": true,
+    "git_status_indicator": true,
+    "diagnostic_badges": true
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "model": "claude-opus-4-8[1m]",
+        "mode": "acceptEdits",
+        "effort": "high"
+      },
+      "type": "registry",
+    },
+  },
+  "icon_theme": "Material Icon Theme",
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": false,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "base_keymap": "VSCode",
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha",
+  },
+  "title_bar": {
+    "show_branch_status_icon": false,
+    "show_sign_in": false,
+  },
+}
